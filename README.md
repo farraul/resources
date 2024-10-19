@@ -31,7 +31,7 @@ export function useLocalStorage<T>(
 }
 
 ```
-### useContextuseContext
+### useContext
     export function useBookmarksContext() {
       const context = useContext(BookmarksContext);
       if (!context) {
