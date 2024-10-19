@@ -1,19 +1,20 @@
 ## useHooks
 
 ### useDebounce
-export function useDebounce<T>(value: T, delay = 500): T {
-  const [debouncedValue, setDebouncedValue] = useState(value);
-
-  useEffect(() => {
-    const timerId = setTimeout(() => setDebouncedValue(value), delay);
-
-    return () => clearTimeout(timerId);
-  }, [value, delay]);
-
-  return debouncedValue;
-}
+    export function useDebounce<T>(value: T, delay = 500): T {
+      const [debouncedValue, setDebouncedValue] = useState(value);
+    
+      useEffect(() => {
+        const timerId = setTimeout(() => setDebouncedValue(value), delay);
+    
+        return () => clearTimeout(timerId);
+      }, [value, delay]);
+    
+      return debouncedValue;
+    }
 
 ### useLocalStorage
+```javascript
 export function useLocalStorage<T>(
   key: string,
   initialValue: T
@@ -29,4 +30,5 @@ export function useLocalStorage<T>(
   return [value, setValue] as const;
 }
 
+```
 
