@@ -30,6 +30,11 @@ export function useLocalStorage<T>(
   return [value, setValue] as const;
 }
 
+  const [bookmarkedIds, setBookmarkedIds] = useLocalStorage<number[]>(
+    "bookmarkedIds",
+    []
+  );
+
 ```
 ### useContext
     export function useBookmarksContext() {
