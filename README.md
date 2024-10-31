@@ -72,7 +72,6 @@ Crear error :
 		constructor(message) {
 			super(message);
 			this.name = 'ValidationError';   
-
 		}
 	}
 
@@ -108,8 +107,7 @@ Ejemplo 2:
         const esDefectuosa = comprobarSiEsDefectuosa();
     
         try {
-            if (i === 2) throw new   
-     ErrorCadenaParada("Se paró");
+            if (i === 2) throw new  ErrorCadenaParada("Se paró");
             if (esDefectuosa) throw new ErrorPiezaDefectuosa("Pieza defectuosa");
         } catch (ex) {
             correctas++;
