@@ -66,14 +66,47 @@ export function useLocalStorage<T>(
     };
 
 ## Errores
-Crear error :
+Ejemplos 2 errores :
+### File1.jsx
 
-	export class ValidationError extends Error {
-		constructor(message) {
-			super(message);
-			this.name = 'ValidationError';   
-		}
+	export class ConnectionError extends Error {
+	    constructor(message) {
+	        super(message);
+	        this.name = 'ConnectionError';
+	    }
 	}
+	
+	export class ValidationError extends Error {
+	    constructor(message) {
+	        super(message);
+	        this.name = 'ValidationError';   
+	
+	    }
+	}
+ ### File2.jsx
+	
+	import { ValidationFromError, ConnectionInfoError } from './errors.js';
+	import { validateUser } from './validations.js';
+	
+	const name = 'midu';
+	const age = 30;
+	const email = '';
+	
+	try {
+	  validateUser(name, age, email);
+	} catch (e) {
+	  if (e instanceof ConnectionError) {
+	    // retry after a few seconds
+	    setTimeout(() => {
+	      validateUser(name, age, email);
+	    }, 2000);
+	  }
+	
+	  if (e instanceof ValidationError) {
+	    // showUIModalValidation()
+	  }
+	}
+
 
 Creador de errores:
 
