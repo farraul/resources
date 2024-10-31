@@ -118,8 +118,7 @@ Ejemplo 2:
                 throw ex;
             }
             if (ex instanceof ErrorPiezaDefectuosa) {
-                console.log(`La pieza   
-                 ${i} es defectuosa`);
+                console.log(`La pieza ${i} es defectuosa`);
                 }
             defectuosas++;
         }
