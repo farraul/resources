@@ -17,9 +17,9 @@
 
 
 
-## Errores
-Ejemplos 2 errores :
-### File1.jsx
+## Errores ejemplos
+### Ejemplo 1
+#### File1.jsx
 
 	export class ConnectionError extends Error {
 	    constructor(message) {
@@ -35,7 +35,17 @@ Ejemplos 2 errores :
 	
 	    }
 	}
- ### File2.jsx
+
+#### File2.jsx
+
+	const validateUser = ({ name, age, email } = {}) => {
+	  if (!name) throw new ValidationError('name is required');
+	  if (!age) throw new ValidationError('age is required');   	
+	  if (!email) throw new ValidationError('email is required');
+	}
+
+ 
+ #### File3.jsx
 	
 	import { ValidationFromError, ConnectionInfoError } from './errors.js';
 	import { validateUser } from './validations.js';
@@ -58,25 +68,51 @@ Ejemplos 2 errores :
 	    // showUIModalValidation()
 	  }
 	}
+ 
+ ### Ejemplo 2
+	 
+	class TokenError extends Error {
+	 metadata;
+	
+	  constructor(message, metadata) {
+	    super(message);
+	    this.metadata = metadata;
+	  }
+	}
+	
+	function run(url) {
+	  const apiURL = new URL(url);
+	  const params = apiURL.searchParams;
+	  const token = params.get("token");
+	
+	  if (!token ||  token !== 'maluma123') {
+	    throw new TokenError("Token no existe", {
+	     token,
+	     url
+	    });
+	  }
+	
+	  console.log({ token });
+	}
+	
+	function catchError() {
+	 try {
+	  run("https://myapi.com?token=badbunny123");
+	 } catch (error) {
+	    if (error instanceof TypeError) {
+	      console.log("La URL que ingresaste no es válida");
+	    } else if (error instanceof TokenError) {
+	      console.log("La URL no tiene un param de token", error.metadata);
+	    }
+	  }
+	}
+	
+	catchError();
 
 
-Creador de errores:
-
-	const createErrorFactory = function(name) {
-	  return class BusinessError extends Error {
-		constructor(message) {
-		  super(message);
-		  this.name = 'ConnectionError'; // Aquí está el problema
-		}
-	  };
-	};
-
-	export const ConnectionError = createErrorFactory('ConnectionError');
-	export const ValidationError = createErrorFactory('ValidationError');
 
 
-
-Ejemplo 2:
+### Ejemplo 3
 
     const NUM_PIEZAS = 5;
     const PROB_ERROR = 0.25;
@@ -110,5 +146,20 @@ Ejemplo 2:
     console.log(`Fabricadas: ${NUM_PIEZAS}`);
     console.log(`Correctas: ${correctas}`);
     console.log(`Defectuosas: ${defectuosas}`); 
+
+## Creador de errores
+
+	const createErrorFactory = function(name) {
+	  return class BusinessError extends Error {
+		constructor(message) {
+		  super(message);
+		  this.name = 'ConnectionError'; // Aquí está el problema
+		}
+	  };
+	};
+
+	export const ConnectionError = createErrorFactory('ConnectionError');
+	export const ValidationError = createErrorFactory('ValidationError');
+
 
 
