@@ -2,7 +2,7 @@ https://es.javascript.info/map-set
 
 ##  Map (similar to objects)
 * Cuando el orden es importante: Si necesitas mantener el orden de inserción de los elementos.
-* La principal diferencia es que Map permite claves de cualquier tipo.
+* La principal diferencia es que Map permite claves de cualquier tipo (incluyendo funciones, objectos...). En objetos solo pueden ser String o Symbol.
 
 
 ## Set (similar to arrays)
