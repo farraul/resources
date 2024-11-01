@@ -3,5 +3,5 @@ Map es, al igual que Objet, una colección de datos identificados por claves. La
 
 ### Los métodos y propiedades son:
 
-![image](https://github.com/user-attachments/assets/2a1e2c7a-3c99-4649-a5f5-841a79f8612b)
+![image](https://github.com/user-attachments/assets/5683609b-e2dd-463b-b166-58a6e9478bc6)
 
