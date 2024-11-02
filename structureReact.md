@@ -9,6 +9,7 @@ Para organizar si un carpeta no tiene su page lo ponemos entre paréntesis como 
 #### interceptors
 ------------
 #### adapters
+    encriptAdapter.ts (jwt-decode)
 ------------
 #### configs
 ------------
