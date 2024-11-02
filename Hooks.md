@@ -66,6 +66,7 @@ export function useLocalStorage<T>(
               .then((json) => setData(json))
               .catch((error) => {
                 if (error.name === 'AbortError') {
+                console.log("Requerst cancelled")
                 } else {
                   setError(error);
                 }
