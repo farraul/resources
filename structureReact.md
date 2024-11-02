@@ -1,12 +1,13 @@
 # src
-#### app (aquí van las páginas)
-Para organizar si un carpeta no tiene su page lo ponemos entre paréntesis como Next.js
+#### app 
+Aquí van las páginas. Para organizar si un carpeta no tiene su page lo ponemos entre paréntesis como Next.js
 ###### example (folder)
     ExamplePage.tsx (file)
 ------------
 #### hooks
 ------------
 #### interceptors
+    axiosInterceptor.ts
 ------------
 #### adapters
     encriptAdapter.ts (jwt-decode)
@@ -17,7 +18,8 @@ Para organizar si un carpeta no tiene su page lo ponemos entre paréntesis como 
 ------------
 #### router
 ------------
-#### models
+#### models 
+Tipos de typescript
 ------------
 #### constants
 ------------
