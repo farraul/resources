@@ -34,3 +34,69 @@ https://es.javascript.info/map-set
 
 ### Tabla
 ![image](https://github.com/user-attachments/assets/6c9da313-664e-404e-aab8-36a3e3adcaa8)
+
+
+
+
+
+## WeakSet (similar to set)
+
+
+#### WeakSet 
+    Ejemplo con WeakSet:
+    
+    JavaScript
+    // Creamos un WeakSet para almacenar referencias a elementos DOM
+    const elementosProcesados = new WeakSet();
+    
+    // Creamos algunos elementos DOM
+    const div1 = document.createElement('div');
+    const div2 = document.createElement('div');
+    
+    // Agregamos los elementos al WeakSet
+    elementosProcesados.add(div1);
+    elementosProcesados.add(div2);
+    
+    // Simulamos el procesamiento de un elemento
+    function procesarElemento(elemento) {
+      console.log('Procesando elemento:', elemento);
+      // Aquí iría la lógica para procesar el elemento
+    }
+    
+    // Procesamos el primer elemento
+    procesarElemento(div1);
+    
+    // Eliminamos todas las referencias al primer elemento
+    div1 = null;
+    
+    // El garbage collector puede eliminar div1, y automáticamente se eliminará del WeakSet
+    console.log(elementosProcesados.has(div1)); // Esto dará false
+
+
+
+#### Set
+
+    const elementosProcesados = new Set();
+    
+    // Creamos algunos elementos DOM
+    const div1 = document.createElement('div');
+    const div2 = document.createElement('div');
+    
+    // Agregamos los elementos al Set
+    elementosProcesados.add(div1);
+    elementosProcesados.add(div2);
+    
+    // Simulamos el procesamiento de un elemento
+    function procesarElemento(elemento) {
+      console.log('Procesando elemento:', elemento);
+      // Aquí iría la lógica para procesar el elemento
+    }
+    
+    // Procesamos el primer elemento
+    procesarElemento(div1);
+    
+    // Eliminamos todas las referencias al primer elemento
+    div1 = null;
+    
+    // El garbage collector puede eliminar div1, pero div1 seguirá estando en el Set
+    console.log(elementosProcesados.has(div1)); // Esto dará false, pero div1 aún ocupa memoria
