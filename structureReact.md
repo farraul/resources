@@ -19,7 +19,8 @@ Aquí van las páginas. Para organizar si un carpeta no tiene su page lo ponemos
 #### router
 ------------
 ### models 
- Tipos de typescript
+Tipos de typescript
+ 
 ------------
 #### constants
 ------------
