@@ -1,9 +1,24 @@
-## src
-#### hooks
-#### interceptors
-#### adapters
-#### configs
-#### services
-#### store
-#### styles 
-#### utils
+# src
+### app
+##### example (folder)
+    examplePage.tsx (file)
+------------
+### hooks
+------------
+### interceptors
+------------
+### adapters
+------------
+### configs
+------------
+
+### services
+------------
+
+### store
+------------
+
+### styles 
+------------
+
+### utils
