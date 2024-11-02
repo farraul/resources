@@ -1,0 +1,9 @@
+## src
+#### hooks
+#### interceptors
+#### adapters
+#### configs
+#### services
+#### store
+#### styles 
+#### utils
