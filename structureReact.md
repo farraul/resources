@@ -12,14 +12,18 @@ Para organizar si un carpeta no tiene su page lo ponemos entre paréntesis como 
 ------------
 #### configs
 ------------
-
 #### services
 ------------
-
+#### router
+------------
+#### models
+------------
+#### constants
+------------
+#### layouts
+------------
 #### store
 ------------
-
 #### styles 
 ------------
-
 #### utils
