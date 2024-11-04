@@ -14,28 +14,30 @@
     }
 
 ### useLocalStorage
-```javascript
-export function useLocalStorage<T>(
-  key: string,
-  initialValue: T
-): [T, React.Dispatch<React.SetStateAction<T>>] {
-  const [value, setValue] = useState(() =>
-    JSON.parse(localStorage.getItem(key) || JSON.stringify(initialValue))
-  );
+**File1**
 
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value));
-  }, [value, key]);
+    export function useLocalStorage<T>(
+      key: string,
+      initialValue: T
+    ): [T, React.Dispatch<React.SetStateAction<T>>] {
+      const [value, setValue] = useState(() =>
+        JSON.parse(localStorage.getItem(key) || JSON.stringify(initialValue))
+      );
+    
+      useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(value));
+      }, [value, key]);
+    
+      return [value, setValue] as const;
+    }
 
-  return [value, setValue] as const;
-}
+**File2**
 
-  const [bookmarkedIds, setBookmarkedIds] = useLocalStorage<number[]>(
-    "bookmarkedIds",
-    []
-  );
+      const [bookmarkedIds, setBookmarkedIds] = useLocalStorage<number[]>(
+        "bookmarkedIds",
+        []
+      );
 
-```
 ### useContext
     export function useBookmarksContext() {
       const context = useContext(BookmarksContext);
