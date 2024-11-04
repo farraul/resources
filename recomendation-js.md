@@ -3,7 +3,7 @@ Usar ESLint
 ### Js en html
 No incrustar js en html <script>...</script>. Hay que modularizar
 ### Let vs const
-Uso correcto de let y const (se puede modificar internamente pero no puede ser otro tipo de dato, ejemplo de Array a Object)
+Uso correcto de let y const (se puede modificar internamente los no primitivos con const pero no puede ser otro tipo de dato, ejemplo de Array a Object)
 ### Dom en bubcles
 No modificar el dom en un buble. La idea es repintar el DOM una sola vez
   
