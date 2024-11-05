@@ -27,6 +27,15 @@ Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
 
   ![image](https://github.com/user-attachments/assets/a40572e3-9371-4278-8946-097784890fd5)
 
+## Task Queue (prioridad)
+1. Tareas de Javascript
+2. MicroTareas de la WebAPI
+3. Tareas de la WebAPI
+
+### Ejemplo
+![image](https://github.com/user-attachments/assets/f5d8d5f0-2b4f-4ec0-b411-b7ebfd124f79)
+
+
 
 ## Call stack
 Mecanismo de como, cuando, y el orden de ejecutar las funciones de javascript.  
