@@ -12,12 +12,19 @@ También conocido como bucle de eventos en programación, es un mecanismo fundam
 
 En términos sencillos, el event loop es como un vigilante que está continuamente atento a la aparición de nuevos eventos o tareas para ser procesadas
 
-## Task (tarea)
+## Task Javascript (tarea)
+Son acciones de Javascript.
+
+ ![image](https://github.com/user-attachments/assets/f2d4cbd1-ea1c-4eaf-94ae-708494423fdc)
+
+
+## Task WebAPI (tarea)
 Tarea o MacroTarea. Son acciones de Javascript y WebAPI.
 
 Son acciones pesadas para el navegador.
 
-![image](https://github.com/user-attachments/assets/0af4e27d-a614-4ccc-b858-809357e7f814)
+![image](https://github.com/user-attachments/assets/7f1eba3d-a42d-435a-8fda-fc7ce6365790)
+
 
 ## Microtask (micro tarea)
 Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
