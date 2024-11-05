@@ -19,6 +19,15 @@ Son acciones pesadas para el navegador.
 
 ![image](https://github.com/user-attachments/assets/0af4e27d-a614-4ccc-b858-809357e7f814)
 
+## Microtask 
+Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
+* Son tareas más sencillas
+* Tienen mayor prioridad
+* Se ejecutan entre tareas
+
+  ![image](https://github.com/user-attachments/assets/a40572e3-9371-4278-8946-097784890fd5)
+
+
 ## Call stack
 Mecanismo de como, cuando, y el orden de ejecutar las funciones de javascript.  
 
