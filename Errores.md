@@ -1,3 +1,44 @@
+## Throw new error
+	try{  
+	     throw new Error('Transfer failed');
+	  }catch(error){
+	    console.log("error", error)
+	    console.log("Error name:", error.name);
+	    console.log("Error message:", error.message);
+	    console.log("Error stack (if available):", error.stack); 
+	  }
+
+![image](https://github.com/user-attachments/assets/8bd64a52-e307-4e38-a592-1db9390e0e9b)
+
+## Throw
+	  try{  
+	     throw('Transfer failed');
+	  }catch(error){
+	    console.log("error", error);
+	    console.log("Error name:", error.name);
+	    console.log("Error message:", error.message);
+	    console.log("Error stack (if available):", error.stack); 
+	  }
+![image](https://github.com/user-attachments/assets/d6f46f8a-af5d-4846-b596-943e12cf751f)
+
+
+
+## ¿Cuándo usar cada un Throw new error y cuando Throw?
+
+
+### throw new Error():
+
+* Generalmente: Es la opción preferida para lanzar excepciones, ya que proporciona más información y facilita la depuración.
+####  Casos de uso:
+* Cuando necesitas crear errores personalizados con mensajes específicos.
+* Cuando quieres aprovechar las propiedades de los objetos Error (como stack).
+
+### throw:
+
+#### Casos específicos:
+* Cuando necesitas lanzar valores personalizados que no son necesariamente errores (por ejemplo, un objeto que representa un estado de error).
+* En situaciones donde la simplicidad es prioritaria y no necesitas mucha información sobre el error.
+
 ## HandleError (Utils)
 
     import toast from "react-hot-toast";
@@ -14,7 +55,6 @@
     
       toast.error(message);
     };
-
 
 
 ## Errores ejemplos
