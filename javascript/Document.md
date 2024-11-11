@@ -16,5 +16,7 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera:
 ### Document DOM
 
   document.querySelector()
-  document.querySelectorAll()   
+  
+  document.querySelectorAll()  
+  
   document.getElementById()
