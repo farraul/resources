@@ -16,9 +16,7 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera:
 ### Document DOM
 
   document.querySelector()
-
-     
-            
+      
       // Select the first paragraph within the container
       const firstParagraph = document.querySelector(".container p");
 
@@ -31,3 +29,20 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera:
   
       // Select the div by its ID
       const myDiv = document.getElementById("myDiv");
+
+
+#### Consumen muchos recursos
+  document.getElementsByTagName()
+
+    // Select all paragraph elements
+    const paragraphs = document.getElementsByTagName("p");
+    
+  document.getElementsByClassName()
+
+    // Select all elements with the class "special"
+    const specialElements = document.getElementsByClassName("special");
+
+  document.getElementsByName()
+
+    // Select all elements with the name attribute
+    const inputFields = document.getElementsByName("*");
