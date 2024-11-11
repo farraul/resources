@@ -15,34 +15,35 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera haciendo click
 
 ## Document DOM
 
-  document.querySelector()
-      
-      // Select the first paragraph within the container
-      const firstParagraph = document.querySelector(".container p");
-
-  document.querySelectorAll()  
-  
-      // Select all elements with the class "paragraph"
-      const paragraphs = document.querySelectorAll(".paragraph");
-    
-  document.getElementById()
+**document.getElementById()**
   
       // Select the div by its ID
       const myDiv = document.getElementById("myDiv");
 
+  **document.querySelector()**
+      
+      // Select the first paragraph within the container
+      const firstParagraph = document.querySelector(".container p");
 
-#### Consumen muchos recursos
-  document.getElementsByTagName()
-
-    // Select all paragraph elements
-    const paragraphs = document.getElementsByTagName("p");
+  **document.querySelectorAll()**
+  
+      // Select all elements with the class "paragraph"
+      const paragraphs = document.querySelectorAll(".paragraph");
     
-  document.getElementsByClassName()
+
+
+### Consumen muchos recursos
+  **document.getElementsByName()**
+
+    // Select all elements with the name attribute
+    const inputFields = document.getElementsByName("*");
+    
+  **document.getElementsByClassName()**
 
     // Select all elements with the class "special"
     const specialElements = document.getElementsByClassName("special");
 
-  document.getElementsByName()
+  **document.getElementsByTagName()**
 
-    // Select all elements with the name attribute
-    const inputFields = document.getElementsByName("*");
+    // Select all paragraph elements
+    const paragraphs = document.getElementsByTagName("p");
