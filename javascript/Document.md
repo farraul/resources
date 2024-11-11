@@ -16,7 +16,18 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera:
 ### Document DOM
 
   document.querySelector()
-  
+
+     
+            
+      // Select the first paragraph within the container
+      const firstParagraph = document.querySelector(".container p");
+
   document.querySelectorAll()  
   
+      // Select all elements with the class "paragraph"
+      const paragraphs = document.querySelectorAll(".paragraph");
+    
   document.getElementById()
+  
+      // Select the div by its ID
+      const myDiv = document.getElementById("myDiv");
