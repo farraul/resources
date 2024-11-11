@@ -12,3 +12,9 @@ Ahora hago clic en los textos y puedo reescribir lo que yo quiera:
 
 ### Document.cookie
 ![image](https://github.com/user-attachments/assets/f93f4ea6-9bea-4514-bda4-9a5b9c593a5e)
+
+### Document DOM
+
+  document.querySelector()
+  document.querySelectorAll()   
+  document.getElementById()
