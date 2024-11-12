@@ -1,7 +1,7 @@
 ## Declar objetos
 Se puede declar objetos tanto con type como con interfaces.
 
-### Type
+**Type**
 
     type UserProps = {
       name: string;
@@ -17,7 +17,7 @@ Se puede declar objetos tanto con type como con interfaces.
       return <div>Card</div>;
     }
     
-### Interface
+**Interface**
  
     interface UserProps {
       name: string;
@@ -29,9 +29,9 @@ Se puede declar objetos tanto con type como con interfaces.
     }
 
 
-### Extensión
+## Extensión
 
-### Type
+**Type**
 
         type UserProps = {
           name: string;
@@ -42,7 +42,7 @@ Se puede declar objetos tanto con type como con interfaces.
           role: string;
         };
 
-### Interface
+**Interface**
 
     interface UserProps {
       name: string;
