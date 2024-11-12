@@ -33,14 +33,14 @@ Se puede declar objetos tanto con type como con interfaces.
 
 ### Type
 
-        interface UserProps {
+        type UserProps = {
           name: string;
           age: number;
-        }
+        };
         
-        interface AdminProps extends UserProps {
+        type AdminProps = UserProps & {
           role: string;
-        }
+        };
 
 ### Interface
 
