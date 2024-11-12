@@ -13,6 +13,8 @@ Con el método bind podemos garantizar que un método siempre se invoque en un c
     
     greet() // "Hola Pedro"
 
+**greet()** es la clave, es decir se tiene que ejecutar después.
+
 El método bind devuelve una nueva función que encapsula a la original para garantizar que siempre se ejecute con el contexto que queremos. En este ejemplo estamos sobrescribiendo la variable greet pero hubiésemos podido asignarla a una variable diferente.
 
 
