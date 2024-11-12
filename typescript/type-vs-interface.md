@@ -29,3 +29,26 @@ Se puede declar objetos tanto con type como con interfaces.
     }
 
 
+### Extensión
+
+### Type
+
+        interface UserProps {
+          name: string;
+          age: number;
+        }
+        
+        interface AdminProps extends UserProps {
+          role: string;
+        }
+
+### Interface
+
+    interface UserProps {
+      name: string;
+      age: number;
+    }
+    
+    interface AdminProps extends UserProps {
+      role: string;
+    }
