@@ -7,18 +7,17 @@ En el contexto global (fuera de cualquier función), this se refiere al objeto g
 ## Dentro de una Función
 En una función, el valor de this depende de cómo se llama a la función.
 
-    function mostrar() {
+    function funcion() {
         console.log(this);
     }
-    mostrar(); // En modo no estricto, `this` será el objeto global (window en navegadores)
+    funcion(); // window
 
 #### use strict
-    'use strict';
-    
-    function mostrar() {
+      "use strict";
+    function funcion() {
         console.log(this);
     }
-    mostrar(); // undefined
+    funcion(); // undefined
 
 ## Métodos de un Objeto 
 Cuando this se usa dentro de un método de un objeto, se refiere al objeto al que pertenece el método.
