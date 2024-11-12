@@ -62,3 +62,16 @@ Las funciones flecha no tienen su propio this. En su lugar, heredan this del con
         }
     };
     persona.saludar(); // 'Hola, soy Carlos'
+
+## Ejemplo
+
+    function foo() {
+      this.a = 2;
+    }
+    
+    const obj = {
+      foo: foo
+    };
+    
+    obj.foo();
+    console.log(obj.a); // 2
