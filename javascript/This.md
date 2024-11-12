@@ -75,3 +75,15 @@ Las funciones flecha no tienen su propio this. En su lugar, heredan this del con
     
     obj.foo();
     console.log(obj.a); // 2
+
+
+
+## Ejemplo 2
+    function Point2D(x, y) {
+    this.x = x;
+    this.y = y;
+    }
+    
+    const p1 = new Point2D(1, 2);
+    console.log(p1.x); // 1
+    console.log(p1.y); // 2
