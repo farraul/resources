@@ -2,28 +2,41 @@
 Para decirlo de una manera simple, todos estos métodos se usan para cambiar el valor de this dentro de una función.
 
 
-## Call()
-Usando el método call, podemos invocar una función, pasando un valor que será tratado como this dentro de ella.
-#### Ejemplo 1
+## Bind
+Con el método bind podemos garantizar que un método siempre se invoque en un contexto específico.
+    let greet = function() {
+      console.log(`Hola ${this.name}`)
+    }
+    
+    const pedro = { name: "Pedro" }
+    greet = greet.bind(pedro); // sobrescribimos la variable
+    
+    greet() // "Hola Pedro"
 
-![image](https://github.com/user-attachments/assets/2d21f002-b8bc-41aa-ab86-34e17209c071)
-
-  ![image](https://github.com/user-attachments/assets/b2058a40-1105-430a-a7cd-3049d5260a37)
-
-
-## ¿Cómo pasar argumentos a funciones?
-
-
-* Bind: pasamos argumentos como valores individuales, comenzando desde el segundo argumento
-  
-![image](https://github.com/user-attachments/assets/f7612fe1-5434-4b82-9266-7b9a0068ceb3)
+El método bind devuelve una nueva función que encapsula a la original para garantizar que siempre se ejecute con el contexto que queremos. En este ejemplo estamos sobrescribiendo la variable greet pero hubiésemos podido asignarla a una variable diferente.
 
 
 
-* Apply: los argumentos adicionales se pasarán como un arreglo
-  
-* ![image](https://github.com/user-attachments/assets/2330a5bd-6aa5-483c-938c-b7cab0fbc0b2)
+## call y apply
+Estos dos métodos nos permiten cambiar el contexto del this al invocar una función. Por ejemplo, imagina que tenemos una función llamada greet que utiliza this internamente, podemos utilizar call para cambiar el contexto de this al invocarla:
 
-  ![image](https://github.com/user-attachments/assets/e72d6903-d064-40f1-8aab-fc5946504623)
+      const greet = function() {
+        console.log(`Hola ${this.name}`)
+      }
+      
+      const pedro = { name: "Pedro" }
+      greet.call(pedro) // "Hola Pedro"
+      
+      const maria = { name: "Maria" }
+      greet.call(maria) // "Hola Maria"
 
+La diferencia entre call y apply es la forma en que se pasan los argumentos de la función: apply recibe los argumentos como un arreglo, mientras que call los recibe como argumentos independientes.
+
+    const sum = function(a, b) {
+      console.log(`${this.name}, el resultado es ${a + b}`)
+    }
+    
+    const pedro = { name: "Pedro" }
+    sum.call(pedro, 1, 2) // "Pedro, el resultado es 3"
+    sum.apply(pedro, [1, 2]) // "Pedro, el resultado es 3"
 
