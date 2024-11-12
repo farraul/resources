@@ -4,6 +4,7 @@ Para decirlo de una manera simple, todos estos métodos se usan para cambiar el 
 
 ## Bind
 Con el método bind podemos garantizar que un método siempre se invoque en un contexto específico.
+
     let greet = function() {
       console.log(`Hola ${this.name}`)
     }
