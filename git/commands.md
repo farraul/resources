@@ -8,6 +8,10 @@ git gui (create commit graphically)
 
 gitk (watch history using gui)
 
+git reset --hard HEAD ( If you need to reset all of the changes currently in your working directory, you can run)
+
+git reset --hard HEAD~1
+
 gitk --all (watch history using gui)
 
 git checkout "branch" (change branch)
