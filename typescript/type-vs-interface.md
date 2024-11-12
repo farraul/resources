@@ -52,3 +52,6 @@ Se puede declar objetos tanto con type como con interfaces.
     interface AdminProps extends UserProps {
       role: string;
     }
+
+   ## Reference
+    https://www.youtube.com/watch?v=Idf0zh9f3qQ
