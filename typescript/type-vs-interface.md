@@ -1,5 +1,7 @@
 ## Declar objetos
-Se puede declar objetos tanto con type como con props
+Se puede declar objetos tanto con type como con interfaces.
+
+### Type
 
     type UserProps = {
       name: string;
@@ -14,5 +16,16 @@ Se puede declar objetos tanto con type como con props
     export default function User({}): UserProps {
       return <div>Card</div>;
     }
+    
+### Interface
+ 
+    interface UserProps {
+      name: string;
+      age: number;
+    };
+    
+    export default function User({}): UserProps {
+      return <div>Card</div>;
+    }
 
-**Pero otro tipo no**
+
