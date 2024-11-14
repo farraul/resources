@@ -30,3 +30,7 @@ Display: En este caso, podemos elegir varias configuraciones (standalone, fullsc
 Orientation: Cuando hablamos de orientación nos referimos a si queremos que la aplicación web se deba usar en modo retrato o en modo paisaje.
 Theme_color: el color que se usará para la barra superior de la aplicación.
 Background_color: color para la pantalla antes de la carga completa de la aplicación.
+
+## info
+
+El service worker está más abajo de mi  index.js
