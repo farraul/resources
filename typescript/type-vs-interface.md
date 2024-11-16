@@ -1,14 +1,11 @@
-## Declar objetos
-Se puede declar objetos tanto con type como con interfaces.
+## Declar cualqtipo de datos (type)
+Interfaces: solo pueden describir objetos. 
+Type: pueden describir objetos Y cualquier otra cosa (por ejemplo, valores primitivos como string, number, boolean).
 
-**Type**
+
+**Type: creating object**
 
     type UserProps = {
-      name: string;
-      age: number;
-    };
-    
-    interface UserProps {
       name: string;
       age: number;
     };
@@ -17,7 +14,7 @@ Se puede declar objetos tanto con type como con interfaces.
       return <div>Card</div>;
     }
     
-**Interface**
+**Interface: creating object**
  
     interface UserProps {
       name: string;
@@ -29,7 +26,7 @@ Se puede declar objetos tanto con type como con interfaces.
     }
 
 
-## Extensión
+## Extensión (2)
 
 **Type**
 
