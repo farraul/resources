@@ -61,6 +61,28 @@ Type alias can easily use utility types - interface can too but only with ugly s
                 1: string;
         }          
         const address: Address = [2, "Other St."];
+        
+## Merged (only interface)
+
+interfaces can be merged
+"interfaces are open" and "type aliases are closed"
+
+**Type**
+Nos de error, dice que no puede estar duplicado.
+
+**Interface**
+
+        type User {
+        name: string;
+        age: number;
+        }
+
+
+        type User  {
+        role: string;
+        }
+
+Ahora user tiene name, age, y string.
 
 
 ## Extracting (only type)
@@ -101,29 +123,6 @@ Extracting type from something else
     //    readonly  rooms: 3;
     //};
 
-## Merged
-
-interfaces can be merged
-"interfaces are open" and "type aliases are closed"
-
-**Type**
-Nos de error, dice que no puede estar duplicado.
-
-**Interface**
-
-        type User {
-        name: string;
-        age: number;
-        }
-
-
-        type User  {
-        role: string;
-        }
-
-Ahora user tiene name, age, y string.
-
-
 
 
 ## Declar cualquier tipo de datos (only type)
@@ -161,7 +160,7 @@ Ahora user tiene name, age, y string.
 
 
 
-## Unión (onley type)
+## Unión (only type)
 
     Type Address = string | string[];
     
