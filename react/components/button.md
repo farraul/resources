@@ -2,8 +2,12 @@
 
 ### File 1
 
-    <SubscribeBtn className="mt-3 w-full" />
-
+    import { twMerge } from "tailwind-merge";
+    import { clsx, ClassValue } from "clsx";
+    
+    export function cn(...inputs: ClassValue[]) {
+      return twMerge(clsx(inputs));
+    }
 ### File 2
 
     import { cn } from "@/lib/utils";
@@ -20,3 +24,7 @@
         </button>
       );
     }
+
+### File 3
+
+    <SubscribeBtn className="mt-3 w-full" />
