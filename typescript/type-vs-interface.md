@@ -1,4 +1,4 @@
-## Declar cualqtipo de datos (type)
+## Declar cualquier tipo de datos (type)
 * Interfaces: solo pueden describir objetos. 
 
 * Type: pueden describir objetos Y cualquier otra cosa (por ejemplo, valores primitivos como string, number, boolean).
