@@ -1,5 +1,5 @@
 
-## Extensión (2)
+## Extension (2)
 
 **Type**
 
@@ -56,10 +56,14 @@ Type alias can easily use utility types - interface can too but only with ugly s
         
 **Interface**
 
-         
+        interface Address extends Array<number | string> {
+                0: number;
+                1: string;
+        }          
+        const address: Address = [2, "Other St."];
 
 
-## Extracting
+## Extracting (only type)
 ### Normal
 Extracting type from something else
 
@@ -97,9 +101,32 @@ Extracting type from something else
     //    readonly  rooms: 3;
     //};
 
-    
+## Merged
 
-## Declar cualquier tipo de datos (solo type)
+interfaces can be merged
+"interfaces are open" and "type aliases are closed"
+
+**Type**
+Nos de error, dice que no puede estar duplicado.
+
+**Interface**
+
+        type User {
+        name: string;
+        age: number;
+        }
+
+
+        type User  {
+        role: string;
+        }
+
+Ahora user tiene name, age, y string.
+
+
+
+
+## Declar cualquier tipo de datos (only type)
 * Interfaces: solo pueden describir objetos. 
 
 * Type: pueden describir objetos Y cualquier otra cosa (por ejemplo, valores primitivos como string, number, boolean).
@@ -134,7 +161,7 @@ Extracting type from something else
 
 
 
-## Unión (solo type)
+## Unión (onley type)
 
     Type Address = string | string[];
     
