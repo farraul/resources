@@ -1,6 +1,7 @@
 ## Declar cualqtipo de datos (type)
-Interfaces: solo pueden describir objetos. 
-Type: pueden describir objetos Y cualquier otra cosa (por ejemplo, valores primitivos como string, number, boolean).
+* Interfaces: solo pueden describir objetos. 
+
+* Type: pueden describir objetos Y cualquier otra cosa (por ejemplo, valores primitivos como string, number, boolean).
 
 
 **Type: creating object**
