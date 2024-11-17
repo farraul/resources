@@ -10,7 +10,7 @@ null, undefined, 0, NaN, "", false.
         let nombre = null;
         let saludo = nombre || "Invitado";
 
-## Operador nulo (??)
+## Operador nulo (??) (Nullish Coalescing)
 ### ¿Cuándo se usa?
 * Para proporcionar un valor por defecto solo cuando el valor es null o undefined.
   
