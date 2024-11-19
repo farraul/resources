@@ -20,13 +20,9 @@ Ejemplo:
     Usa el código con precaución.
 
 ## res.json()
-* Función: En frameworks como Express.js, se utiliza para enviar una respuesta en formato JSON desde un servidor.
+* Función: Para realizar una solicitud desde el front-end y recibir una respuesta en formato JSON,
 
 Ejemplo:
 
-    app.get('/usuarios', (req, res) => {
-        const usuarios = [{ nombre: "Alicia" }, { nombre: "Bob" }];
-        res.json(usuarios);
-    });
-
+       fetch('/usuarios').then(response => response.json())
 
