@@ -23,22 +23,27 @@ Son acciones de Javascript.
 
  ![image](https://github.com/user-attachments/assets/f2d4cbd1-ea1c-4eaf-94ae-708494423fdc)
 
+## Microtask (micro tarea)
+Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
+* Son tareas más sencillas
+* Tienen mayor prioridad
+* Se ejecutan entre tareas
+* Promesas: Promise.then, Promise.catch, Promise.finally.
+* Mutations: MutationObserver.
+  
+    ![image](https://github.com/user-attachments/assets/a40572e3-9371-4278-8946-097784890fd5)
+
 
 ## Task WebAPI (tarea)
 Tarea o MacroTarea. Son acciones de Javascript y WebAPI.
 
 Son acciones pesadas para el navegador.
 
+* Eventos del DOM: Clicks, teclas presionadas, etc.
+* Timers: setTimeout, setInterval.
+* Operaciones asíncronas: Como las solicitudes AJAX.
+
 ![image](https://github.com/user-attachments/assets/7f1eba3d-a42d-435a-8fda-fc7ce6365790)
-
-
-## Microtask (micro tarea)
-Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
-* Son tareas más sencillas
-* Tienen mayor prioridad
-* Se ejecutan entre tareas
-
-  ![image](https://github.com/user-attachments/assets/a40572e3-9371-4278-8946-097784890fd5)
 
 
 ### Ejemplo
@@ -49,11 +54,67 @@ Microtareas son acciones de las Web WebAPIs que se ordenan en la cola de tareas.
 ## Call stack
 Mecanismo de como, cuando, y el orden de ejecutar las funciones de javascript.  
 
-
 setTimeout (WebApis)
 
 Promise (WebApis)
 
+## Ejemplo
+
+    console.log('Inicio');
+    
+    setTimeout(() => {
+      console.log('Tarea: setTimeout');
+    }, 0);
+    
+    Promise.resolve().then(() => {
+      console.log('Microtarea: Promise');
+    });
+    
+    console.log('Fin');
+
+ Consola:
+
+    Inicio
+    Fin
+    Microtarea: Promise
+    Tarea: setTimeout
+
+   ## Ejemplo 2
+   
+    console.log('Inicio');
+    
+    setTimeout(() => {
+     console.log('Tarea: setTimeout');
+    }, 0);
+    
+    Promise.resolve().then(() => {
+     console.log('Microtarea: Promise 1');
+    }).then(() => {
+     console.log('Microtarea: Promise 2');
+    });
+    
+    const observer = new MutationObserver(() => {
+     console.log('Microtarea: MutationObserver');
+    });
+    
+    const targetNode = document.createElement('div');
+    observer.observe(targetNode, { attributes: true });
+    
+    targetNode.setAttribute('id', 'nuevo-id');
+    
+    console.log('Fin');
+
+   Consola:
+
+    Inicio
+    Fin
+    Microtarea: Promise 1
+    Microtarea: Promise 2
+    Microtarea: MutationObserver
+    Tarea: setTimeout
+
+
+   
 
 ## Referencia
 https://www.youtube.com/watch?v=rvzItyLuh28
