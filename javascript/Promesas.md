@@ -1,12 +1,26 @@
 
+## Usando .then
+
+    fetch('/api/data')
+      .then(response => response.json())
+      .then(data => {
+        console.log('Datos recibidos:', data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  
+
+  ## Usando async/await
+
+    async function fetchData() {
+        try {
+            const response = await fetch('/api/data');
+            const data = await response.json();
+            console.log('Datos recibidos:', data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
     
-### Example 1 
-    let promise = new Promise(function(resolve, reject) {
-      setTimeout(() => resolve("hecho!"), 1000);
-    });
-    
-    // resolve ejecuta la primera función en .then
-    promise.then(
-      result => alert(result), // muestra "hecho!" después de 1 segundo
-      error => alert(error) // no se ejecuta
-    );
+    fetchData();
