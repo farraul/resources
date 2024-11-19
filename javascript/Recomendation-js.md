@@ -22,6 +22,7 @@ No modificar el dom en un buble. La idea es repintar el DOM una sola vez
 
 
 * Append y appendChild, text.content(revisar)
+  
 Seguridad Mejorada: Estos métodos son generalmente más seguros porque trabajan con nodos del DOM en lugar de cadenas HTML. Esto significa que no interpretan el contenido como HTML, reduciendo el riesgo de inyección de scripts3
 
   Bien:
