@@ -8,6 +8,14 @@
 ## Magic numbers
     let dollarsPerEuro = 1.25;
     let dollarsCount = 50 * dollarsPerEuro; // dollarsPerEuro es un Magic numbers
+    
+## Interpolation
+
+    const firstName = 'Joffrey';
+    const greeting = 'Hello';
+    
+    console.log(greeting + ', ' + firstName + '!');
+    // => 'Hello, Joffrey!'
 
 ##  Naming Convention for Variables
 
