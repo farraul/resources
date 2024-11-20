@@ -17,6 +17,23 @@
     console.log(greeting + ', ' + firstName + '!');
     // => 'Hello, Joffrey!'
 
+
+## To components el "handle se quita y se pone on"
+
+
+      const handleClick = () => {
+        setContador(contador + 1);
+      };
+    
+      return (
+        <div>
+          <p>Has hecho clic {contador} veces.</p>
+          <button onClick={handleClick}>Haz clic aquí</button>
+        </div>
+      );
+    }
+
+
 ##  Naming Convention for Variables
 
     const dogName = 'Droopy';
