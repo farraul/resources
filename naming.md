@@ -32,3 +32,14 @@
     function getName(dogName, ownerName) { 
       return '${dogName} ${ownerName}';
     }
+   
+    
+    function calculateDogAgeInHumanYears(dogAge) {
+      return dogAge * 7;
+    }
+
+## Naming Convention for Constants
+    const DAYS_IN_WEEK = 7;
+## Naming Convention for Global Variables
+    const GLOBAL_MAX_COUNT = 100;
+
