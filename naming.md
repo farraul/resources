@@ -1,4 +1,12 @@
 
+## Types
+* kebab-case
+* snake_case
+* CamelCase
+
+
+
+
 ##  Naming Convention for Variables
 ### Examples
     const dogName = 'Droopy';
