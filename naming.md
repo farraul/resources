@@ -6,7 +6,8 @@
 ## Naming Convention for Booleans
 ### Examples
 
-    const hasOwner = true;
+        let hasOwner = true;
+        let isTrained = false;
 
 ## Naming Convention for Functions
 ### Examples
