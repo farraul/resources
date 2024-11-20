@@ -1,7 +1,9 @@
 
-###  Naming Convention for Variables
+##  Naming Convention for Variables
 
-// good
+### Examples
 var dogName = 'Droopy';
 
-### Naming Convention for Booleans
+## Naming Convention for Booleans
+
+### Examples
