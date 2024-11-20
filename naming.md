@@ -6,9 +6,8 @@
 
 
 ## Magic numbers
-let dollarsPerEuro = 1.25;
-
-let dollarsCount = 50 * dollarsPerEuro; // dollarsPerEuro es un Magic numbers
+    let dollarsPerEuro = 1.25;
+    let dollarsCount = 50 * dollarsPerEuro; // dollarsPerEuro es un Magic numbers
 
 ##  Naming Convention for Variables
 
