@@ -18,6 +18,7 @@
     // => 'Hello, Joffrey!'
 
 
+
 ## To components el "handle se quita y se pone on"
 
 
@@ -32,6 +33,11 @@
         </div>
       );
     }
+
+**Example 2**
+
+        const handleNavigate= {...}
+        return(<Controller onNavigate={handleNavigate}/)
 
 
 ##  Naming Convention for Variables
