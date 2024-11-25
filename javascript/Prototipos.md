@@ -26,3 +26,6 @@ Hacer esto no es aconsejable pero esto es para un fin educativo.
 Por lo tanto ahora tenemos acceso:
 
 ![image](https://github.com/user-attachments/assets/18e570d2-7eb9-4f13-924a-25eda1543702)
+
+
+Primero se fija en el prototipo (sacha) y después en el prototipo/s (cheff).
