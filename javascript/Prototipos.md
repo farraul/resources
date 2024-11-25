@@ -29,3 +29,7 @@ Por lo tanto ahora tenemos acceso:
 
 
 Primero se fija en el objeto (sacha) y después en el prototipo/s (cheff).
+
+
+## Reference
+https://www.youtube.com/watch?v=a2tp64Vtzxs
