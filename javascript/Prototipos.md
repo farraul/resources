@@ -79,8 +79,47 @@ Tiene todos estos métodos:
 
 
 ### Crear 
+Le pasamos el ptototipo y nos devuelve un nuevo objeto
 
         const sacha = Object.create(cheff);
+
+
+        function Cheff(tipo = 'cocina básica') {
+  this.tipo = tipo;
+}
+
+
+## Funciones constructoras y clases
+
+        function Cheff(tipo = 'cocina básica') {
+          this.tipo = tipo;
+        }
+        
+        Cheff.prototype.cocinar = function(plato) {
+          console.log('Cocinando ' + plato);
+        };
+        
+        Cheff.prototype.presentarse = function() {
+          console.log('Hola, soy un cheff especializado');
+        }
+        
+        const sacha = new Cheff();
+
+ Y desde ECMAscript 15 se puede poner class en vez de function:
+ 
+         class Cheff(tipo = 'cocina básica') {
+          this.tipo = tipo;
+        }
+        
+        Cheff.prototype.cocinar = function(plato) {
+          console.log('Cocinando ' + plato);
+        };
+        
+        Cheff.prototype.presentarse = function() {
+          console.log('Hola, soy un cheff especializado');
+        }
+        
+        const sacha = new Cheff();
         
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
