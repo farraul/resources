@@ -55,6 +55,27 @@ Tiene todos estos métodos:
 ### Todos salen de object
 ![image](https://github.com/user-attachments/assets/dcc0ef39-2376-4d45-950e-1445a3e6ec86)
 
+### This
+
+        const cheff = {
+          tipo: 'Cocina Básica',
+          cocinar: function(plato) {
+            console.log('Cocinando ' + plato);
+          },
+          presentarse: function() {
+            console.log('Hola, soy un cheff especializado en ' + this.tipo);
+          }
+        };
+        
+        const sacha = {
+          nombre: 'Sacha',
+          edad: 31,
+          profesion: 'Developer',
+          tipo: 'Front-End'
+        };
+
+        ![image](https://github.com/user-attachments/assets/e10a9d0e-7cb6-459c-9a7c-3a6d6bad387b)
+
 
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
