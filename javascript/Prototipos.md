@@ -52,6 +52,9 @@ Tiene todos estos métodos:
 
 ![image](https://github.com/user-attachments/assets/b1f81c5a-2bab-4c60-8a3e-a0623d098aac)
 
+### Todos salen de object
+![image](https://github.com/user-attachments/assets/dcc0ef39-2376-4d45-950e-1445a3e6ec86)
+
 
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
