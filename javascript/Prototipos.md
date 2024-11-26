@@ -30,6 +30,13 @@ Por lo tanto ahora tenemos acceso:
 
 Primero se fija en el objeto (sacha) y después en el prototipo/s (cheff).
 
+### Todo lo que no sea primitvo tiene prototipos
+Ejemplos:
 
+        const pepe = { nombre: 'Pepe' };
+        const numeros = [3, 57, 94];
+        const sumar = (a, b) => a + b;
+        const regexp = /\d+/gi;
+        const ahora = new Date();
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
