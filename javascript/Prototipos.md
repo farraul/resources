@@ -44,5 +44,10 @@ Tiene todos estos métodos:
 
 ![image](https://github.com/user-attachments/assets/98f894a8-6d54-463c-8ca3-a95dde4f1235)
 
+### Comprobamos que son iguales los métodos que tiene el Object que el que tiene los objetos
+
+![image](https://github.com/user-attachments/assets/e3989088-79c5-483e-8026-d5ddf88e179f)
+
+
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
