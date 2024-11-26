@@ -74,7 +74,7 @@ Tiene todos estos métodos:
           tipo: 'Front-End'
         };
 
-        ![image](https://github.com/user-attachments/assets/e10a9d0e-7cb6-459c-9a7c-3a6d6bad387b)
+![image](https://github.com/user-attachments/assets/ac48636b-fa80-4814-ab1e-737a0fef5703)
 
 
 ## Reference
