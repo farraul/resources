@@ -38,5 +38,11 @@ Ejemplos:
         const sumar = (a, b) => a + b;
         const regexp = /\d+/gi;
         const ahora = new Date();
+
+### Object.prototype
+Tiene todos estos métodos:
+
+![image](https://github.com/user-attachments/assets/98f894a8-6d54-463c-8ca3-a95dde4f1235)
+
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
