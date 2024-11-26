@@ -77,5 +77,9 @@ Tiene todos estos métodos:
 ![image](https://github.com/user-attachments/assets/ac48636b-fa80-4814-ab1e-737a0fef5703)
 
 
+
+### Crear 
+
+const sacha = Object.create(cheff);
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
