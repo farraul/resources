@@ -48,6 +48,10 @@ Tiene todos estos métodos:
 
 ![image](https://github.com/user-attachments/assets/e3989088-79c5-483e-8026-d5ddf88e179f)
 
+### Ver métodos
+
+![image](https://github.com/user-attachments/assets/b1f81c5a-2bab-4c60-8a3e-a0623d098aac)
+
 
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
