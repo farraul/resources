@@ -80,6 +80,7 @@ Tiene todos estos métodos:
 
 ### Crear 
 
-const sacha = Object.create(cheff);
+        const sacha = Object.create(cheff);
+        
 ## Reference
 https://www.youtube.com/watch?v=a2tp64Vtzxs
