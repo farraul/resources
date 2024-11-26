@@ -1,4 +1,4 @@
-En javascript todo son objetos
+En javascript todo son objetos mientras no sean primitivos.
 
 
 ## 2 formas de asignar
