@@ -46,6 +46,10 @@ Son acciones pesadas para el navegador.
 ![image](https://github.com/user-attachments/assets/7f1eba3d-a42d-435a-8fda-fc7ce6365790)
 
 
+## Micro vs Macro
+![image](https://github.com/user-attachments/assets/b4fba36a-d0ea-4df2-b21a-6ab2defef44c)
+
+
 ### Ejemplo
 ![image](https://github.com/user-attachments/assets/f5d8d5f0-2b4f-4ec0-b411-b7ebfd124f79)
 
