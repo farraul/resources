@@ -1,5 +1,6 @@
-
-## Usando .then
+## Fecth
+Fetch es una promesa
+### Usando .then
 
     fetch('/api/data')
       .then(response => response.json())
@@ -25,8 +26,8 @@
     
     fetchData();
 
-
-## Promise.all
+## Promesas
+### Promise.all
 
 Si necesitas realizar múltiples solicitudes en paralelo y esperar a que todas se completen, puedes usar Promise.all:
 
@@ -45,7 +46,7 @@ Si necesitas realizar múltiples solicitudes en paralelo y esperar a que todas s
         
         fetchMultipleData();
 
-## Promise.race
+### Promise.race
 
 Si quieres que se resuelva la primera promesa que se complete, puedes usar Promise.race:
 
@@ -62,8 +63,8 @@ Si quieres que se resuelva la primera promesa que se complete, puedes usar Promi
         }
         
         fetchFirstData();
-
-## Promise.allSettled
+        
+### Promise.allSettled
 
 Si quieres esperar a que todas las promesas se completen, sin importar si se resuelven o rechazan, puedes usar Promise.allSettled:
 
