@@ -1,4 +1,4 @@
-## Fecth
+## Fetch
 Fetch es una promesa
 ### Usando .then
 
