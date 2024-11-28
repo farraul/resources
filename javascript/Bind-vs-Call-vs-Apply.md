@@ -43,3 +43,6 @@ La diferencia entre call y apply es la forma en que se pasan los argumentos de l
     sum.call(pedro, 1, 2) // "Pedro, el resultado es 3"
     sum.apply(pedro, [1, 2]) // "Pedro, el resultado es 3"
 
+![image](https://github.com/user-attachments/assets/515ae37e-a338-4c97-b6b2-df1d90a330f5)
+
+
