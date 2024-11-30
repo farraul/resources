@@ -4,6 +4,20 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 * enumerable – si es true, puede ser listado en bucles, de otro modo no puede serlo.
 * configurable – si es true, la propiedad puede ser borrada y estos atributos pueden ser modificados, de otra forma no.
 
+## Ejemplo
+
+      const person = {
+         firstName: "John",
+         lastName: "Doe"
+      };
+      
+      const firstNameProperty = Object.getOwnPropertyDescriptor(person, "firstName");
+      console.log(firstNameProperty);
+
+![image](https://github.com/user-attachments/assets/56a63cbc-3554-48f1-934e-4cd5376e1a34)
+
+
+### Ejemplo
 
       
       const miObjeto = {};
