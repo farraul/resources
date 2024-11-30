@@ -17,7 +17,7 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 ![image](https://github.com/user-attachments/assets/56a63cbc-3554-48f1-934e-4cd5376e1a34)
 
 
-### Ejemplo
+## Ejemplo
 
       
       const miObjeto = {};
