@@ -18,7 +18,7 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 
 
 
-### writable
+## Writable
 
       Object.defineProperty( newObject, 'a', {
          value: "some value",
@@ -47,7 +47,7 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
       newObject
       // Object {a: "some value"}
 
-### Enumerable
+## Enumerable
 
             Object.defineProperty( newObject, 'a', {
                value: "some value",
@@ -72,3 +72,29 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
             // undefined
             Object.keys(newObject);
             // []
+
+
+## Configurable
+
+      Object.defineProperty( newObject, 'a', {
+         value: "some value",
+         configurable: true,
+      });
+      // Object {a: "some value"}
+      delete newObject.a;
+      // true
+      newObject
+      // Object {}
+
+
+### Non-configurable
+
+      Object.defineProperty( newObject, 'a', {
+         value: "some value",
+         configurable: false,
+      });
+      // Object {a: "some value"}
+      delete newObject.a;
+      // false
+      newObject
+      // Object {a: "some value"}
