@@ -17,54 +17,58 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 ![image](https://github.com/user-attachments/assets/56a63cbc-3554-48f1-934e-4cd5376e1a34)
 
 
-## Ejemplo
 
-      
-      const miObjeto = {};
-      
-      // Creando una propiedad no-escriturable
-      Object.defineProperty(miObjeto, 'nombre', {
-        value: 'Juan',
-        writable: false
+### writable
+
+      Object.defineProperty( newObject, 'a', {
+         value: "some value",
+         writable: true,
       });
+      // Object {a: "some value"}
       
-      // Intentar cambiar el valor (dará error)
-      miObjeto.nombre = 'María';
+      newObj.a = 'some other new value';
+      // "some other new value"
       
-      // Creando una propiedad no-enumerable
-      Object.defineProperty(miObjeto, 'edad', {
-        value: 30,
-        enumerable: false
-      });
-      
-      // El bucle for...in no incluirá la propiedad 'edad'
-      for (const prop in miObjeto) {
-        console.log(prop); // Solo imprimirá 'nombre'
-      }
-      
-      // Creando una propiedad no-configurable
-      Object.defineProperty(miObjeto, 'esAdulto', {
-        value: true,
-        configurable: false
-      });
-      
-      // Intentar hacer la propiedad 'esAdulto' escribible (dará error)
-      Object.defineProperty(miObjeto, 'esAdulto', {
-        writable: true
-      });
+      newObj
+      // Object {a: "some other new value"}
 
 
-### Writable
+### Non-writable
 
-      const object1 = {};
-      
-      Object.defineProperty(object1, 'property1', {
-        value: 42,
-        writable: false,
+      Object.defineProperty( newObject, 'a', {
+         value: "some value",
+         writable: false,
       });
+      // Object {a: "some value"}
       
-      object1.property1 = 77;
-      // Throws an error in strict mode
+      newObj.a = 'some other new value';
+      // "some other new value"
       
-      console.log(object1.property1);
-      // Expected output: 42
+      newObject
+      // Object {a: "some value"}
+
+### Enumerable
+
+            Object.defineProperty( newObject, 'a', {
+               value: "some value",
+               enumerable: true,
+            });
+            // Object {a: "some value"}
+            for (var key in newObject) { console.log(key) }
+            // a
+            
+            Object.keys(newObject);
+            // ["a"]
+
+
+### Non-Enumerable
+
+            Object.defineProperty( newObject, 'a', {
+               value: "some value",
+               enumerable: false,
+            });
+            // Object {a: "some value"}
+            for (var key in newObject) { console.log(key) }
+            // undefined
+            Object.keys(newObject);
+            // []
