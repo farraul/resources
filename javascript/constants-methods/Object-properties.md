@@ -5,15 +5,36 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 * configurable – si es true, la propiedad puede ser borrada y estos atributos pueden ser modificados, de otra forma no.
 
 
-
-###  Non-writable
-  
-    let user = {
-      name: "Juan"
-    };
-    
-    Object.defineProperty(user, "name", {
-      writable: false
-    });
-    
-    user.name = "Pedro"; // Error: No se puede asignar a la propiedad de solo lectura 'name'...
+      
+      const miObjeto = {};
+      
+      // Creando una propiedad no-escriturable
+      Object.defineProperty(miObjeto, 'nombre', {
+        value: 'Juan',
+        writable: false
+      });
+      
+      // Intentar cambiar el valor (dará error)
+      miObjeto.nombre = 'María';
+      
+      // Creando una propiedad no-enumerable
+      Object.defineProperty(miObjeto, 'edad', {
+        value: 30,
+        enumerable: false
+      });
+      
+      // El bucle for...in no incluirá la propiedad 'edad'
+      for (const prop in miObjeto) {
+        console.log(prop); // Solo imprimirá 'nombre'
+      }
+      
+      // Creando una propiedad no-configurable
+      Object.defineProperty(miObjeto, 'esAdulto', {
+        value: true,
+        configurable: false
+      });
+      
+      // Intentar hacer la propiedad 'esAdulto' escribible (dará error)
+      Object.defineProperty(miObjeto, 'esAdulto', {
+        writable: true
+      });
