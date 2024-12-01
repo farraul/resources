@@ -19,6 +19,7 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 
 
 ## Writable
+Controla si el valor de una propiedad puede ser modificado.
 
       Object.defineProperty( newObject, 'a', {
          value: "some value",
@@ -75,6 +76,7 @@ Las propiedades de objeto, aparte de un value, tienen tres atributos especiales 
 
 
 ## Configurable
+Controla si una propiedad puede ser eliminada o si sus atributos pueden ser modificados.
 
       Object.defineProperty( newObject, 'a', {
          value: "some value",
