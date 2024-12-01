@@ -48,3 +48,10 @@ Executes a provided function once for each array element.
 
     const numbers = [1, 2, 3];
     numbers.forEach(number => console.log(number)); // Logs 1, 2, 3 to the console
+
+### Map
+
+Creates a new array by transforming each element of the original array.
+
+    const numbers = [1, 2, 3];
+    const doubledNumbers = numbers.map(number => number * 2); // doubledNumbers is [2, 4, 6]
