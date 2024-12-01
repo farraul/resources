@@ -29,3 +29,10 @@ Reemplaza todas las ocurrencias de un substring con otro.
 
     let texto = "El gato está en el gato";
     let nuevoTexto = texto.replace("gato", "perro"); // "El perro está en el gato"
+
+
+### split
+Divide una cadena en un array de substrings, basado en un separador.
+
+let nombres = "Juan,María,Pedro";
+let arrayNombres = nombres.split(","); // ["Juan", "María", "Pedro"]
