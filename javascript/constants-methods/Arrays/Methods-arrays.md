@@ -55,3 +55,16 @@ Creates a new array by transforming each element of the original array.
 
     const numbers = [1, 2, 3];
     const doubledNumbers = numbers.map(number => number * 2); // doubledNumbers is [2, 4, 6]
+
+### Filter
+Creates a new array containing only elements that pass a test implemented by a provided function.
+
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(number => number % 2 === 0); // evenNumbers is [2, 4]
+
+
+### Reduce
+Reduces an array to a single value by applying a function to each element and accumulating the result.
+    
+    const numbers = [1, 2, 3];
+    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // sum is 6
