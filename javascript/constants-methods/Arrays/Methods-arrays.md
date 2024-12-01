@@ -18,13 +18,13 @@ Adds one or more elements to the beginning of an array.
     const animals = ["cat", "dog"];
     animals.unshift("bird", "fish"); // animals is now ["bird", "fish", "cat", "dog"]
 
-### Slice
+### Slice (rebanada)
 Extracts a section of an array and returns a new array.
 
     const numbers = [10, 20, 30, 40, 50];
     const slicedNumbers = numbers.slice(1, 4); // slicedNumbers is [20, 30, 40]
 
-### Splice
+### Splice (empalme)
 Removes or replaces elements from an array and optionally inserts new elements.
 
     const letters = ["a", "b", "c", "d"];
