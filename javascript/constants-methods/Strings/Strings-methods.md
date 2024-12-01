@@ -19,6 +19,16 @@ Extrae una porción de una cadena y devuelve una nueva cadena.
 
     let palabra = "JavaScript";
     let subcadena = palabra.slice(4, 10); // "Script"
+    
+    const fullName = "Broseph Code";
+    
+    //let firstName = fullName.slice(0, 3);
+    //let lastName = fullName.slice(4, 8);
+    
+    //let firstChar = fullName.slice(0, 1);
+    //let lastChar = fullName.slice(-1);
+
+    
 
 
 ### substring
