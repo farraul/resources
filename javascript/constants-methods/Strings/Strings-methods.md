@@ -14,7 +14,7 @@ Convierten todos los caracteres de una cadena a mayúsculas o minúsculas, respe
     let indiceUltimaO = saludo.lastIndexOf("o"); // 15
 
 
-### slice
+### Slice
 Extrae una porción de una cadena y devuelve una nueva cadena.
 
     let palabra = "JavaScript";
