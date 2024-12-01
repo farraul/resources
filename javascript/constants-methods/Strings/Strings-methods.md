@@ -34,5 +34,13 @@ Reemplaza todas las ocurrencias de un substring con otro.
 ### split
 Divide una cadena en un array de substrings, basado en un separador.
 
-let nombres = "Juan,María,Pedro";
-let arrayNombres = nombres.split(","); // ["Juan", "María", "Pedro"]
+    let nombres = "Juan,María,Pedro";
+    let arrayNombres = nombres.split(","); // ["Juan", "María", "Pedro"]
+
+
+### Concat
+Combina dos o más cadenas en una nueva cadena.
+
+    let saludo1 = "Hola";
+    let saludo2 = "Mundo";
+    let saludoCompleto = saludo1.concat(" ", saludo2); // "Hola Mundo"
