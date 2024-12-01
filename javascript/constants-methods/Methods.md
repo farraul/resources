@@ -28,19 +28,52 @@ Creates an object from an existing object. Creates a new object, and sets the __
 
 Returns an array of the key/value pairs of an object
 
+        const person = { name: "Alice", age: 30 };
+        const entries = Object.entries(person);
+        
+        console.log(entries); // Output: [["name", "Alice"], ["age", 30]]
+
 ### Object.fromEntries()
 
 Creates an object from a list of keys/values. Array of arrays to object
 
+        const entries = [["name", "Bob"], ["age", 25]];
+        const person = Object.fromEntries(entries);
+        
+        console.log(person); // Output: { name: "Bob", age: 25 }
+
 ### Object.keys(object)
 
 Returns an array of the keys of an object. 
+        
+        const person = { name: "Alice", age: 30, city: "New York" };
+        const keys = Object.keys(person);
+        
+        console.log(keys); // Output: ["name", "age", "city"]
 
 ### Object.values(object)
 
 Returns an array of the property values of an object
 
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 30
+        };
+        
+        const values = Object.values(person);
+        console.log(values); // Output: ["John", "Doe", 30]
+
 ### Object.groupBy(object, callback)
 
 Groups object elements according to a function
 
+        const people = [
+          { name: 'Alice', age: 25, city: 'New York' },
+          { name: 'Bob', age: 30, city: 'Los Angeles' },
+          { name: 'Charlie', age: 25, city: 'Chicago' },
+          { name: 'David', age: 30, city: 'New York' }
+        ];
+        
+        const groupedPeopleByAge = Object.groupBy(people, person => person.age);
+        console.log(groupedPeopleByAge); // Output: { '25': [{ name: 'Alice', age: 25, city: 'New York' }, { name: 'Charlie', age: 25, city: 'Chicago' }], '30': [{ name: 'Bob', age: 30, city: 'Los Angeles' }, { name: 'David', age: 30, city: 'New York' }] }
