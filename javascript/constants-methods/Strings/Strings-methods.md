@@ -19,3 +19,13 @@ Extrae una porción de una cadena y devuelve una nueva cadena.
 
     let palabra = "JavaScript";
     let subcadena = palabra.slice(4, 10); // "Script"
+
+
+### substring
+Similar a slice(), pero los índices negativos no son permitidos.
+
+### Replace()
+Reemplaza todas las ocurrencias de un substring con otro.
+
+    let texto = "El gato está en el gato";
+    let nuevoTexto = texto.replace("gato", "perro"); // "El perro está en el gato"
