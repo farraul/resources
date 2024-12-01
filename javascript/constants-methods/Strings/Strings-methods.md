@@ -28,8 +28,8 @@ Extrae una porción de una cadena y devuelve una nueva cadena.
     //let firstChar = fullName.slice(0, 1);
     //let lastChar = fullName.slice(-1);
     //let firstName = fullName.slice(0, fullName.indexOf(" "));
+    //let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 
-    
 
 
 ### substring
