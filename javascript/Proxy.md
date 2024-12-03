@@ -11,10 +11,10 @@ Tenemos get y set
   
       proxyT.value = "pepito";
 
-  
-  * Value es "pepito"
+
+* Value es "pepito"
     
-     proxyT.value = "pepito";
+         proxyT.value = "pepito";
 
    
 ## Ejemplo 1    
