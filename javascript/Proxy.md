@@ -43,6 +43,7 @@
             set: (target, property, value) => {
               if (typeof(value) === 'string') {
                 target[property]   = value;   
+                //target.push(value)   en este caso no usará el property "5"
               }
             }
           });
