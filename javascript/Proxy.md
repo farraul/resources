@@ -55,3 +55,5 @@
         })();
 
 ![image](https://github.com/user-attachments/assets/f0d5401b-cc1e-4103-bb0c-65b64a7ca3ec)
+
+## Ejemplo 4 (proxy para el DOM)
