@@ -1,3 +1,8 @@
+
+ function(target, property, value){}
+ * Target es el names cuando se crea el proxy:
+    let proxy = new Proxy(names, {...}
+## Ejemplo 1    
     (function() {
       let names = ["Juan", "Pedro", "Héctor"];
     
