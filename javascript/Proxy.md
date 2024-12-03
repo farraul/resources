@@ -1,7 +1,16 @@
+Tenemos get y set
 
- function(target, property, value){}
+ get: function(target, property) {}
+ set: (target, property, value) => {
+ 
  * Target es el names cuando se crea el proxy:
     let proxy = new Proxy(names, {...}
+* Property es "value":
+   proxyT.value = "pepito";
+  * Value es "pepito"
+     proxyT.value = "pepito";
+
+   
 ## Ejemplo 1    
     (function() {
       let names = ["Juan", "Pedro", "Héctor"];
