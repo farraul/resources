@@ -11,5 +11,5 @@
       console.log(proxy['nuevo-property']);
       })();
 
-  ![image](https://github.com/user-attachments/assets/ec602d82-1892-4ee0-ac90-db7ef2898726)
+![image](https://github.com/user-attachments/assets/aecd8353-2ecf-4f0a-b66f-6ff881873fb9)
 
