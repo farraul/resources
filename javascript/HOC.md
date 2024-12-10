@@ -24,6 +24,9 @@
 
 ### Tasks
 
+    import WithSearch from './WithSearch';
+    import TodoList from './TodoList';
+    
     const Tasks = () => {
       const tasks = [
         { id: 0, title: 'tarea 1', completed: false },
