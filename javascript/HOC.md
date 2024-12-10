@@ -42,27 +42,18 @@
     export default Tasks;
 
 
-### ToDoItem
-
-    const ToDoItem = ({ title, completed }: { title: string; completed: boolean }) => {
-      return (
-        <div>
-          <input type='checkbox' defaultChecked={completed} className='mr-2' />
-          {title}
-        </div>
-      );
-    };
-    
-    export default ToDoItem;
-
 ### TodoList
 
     const TodoList = ({ query, dataSet }: { query: string; dataSet: dataSet[] }) => {
       const items = filterItems(query, dataSet);
+      
       return (
         <div>
           {items.map((product, index) => (
-            <ToDoItem key={index} title={product.title} completed={product.completed} />
+            <div>
+              <input type='checkbox' defaultChecked={product.completed} className='mr-2' />
+              {product.title}
+            </div>                    
           ))}
         </div>
       );
