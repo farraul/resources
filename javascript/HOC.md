@@ -2,7 +2,7 @@
 
 
 
-### Services
+### Services (similar 1)
 
     import WithSearch from './WithSearch';
     import TodoList from './TodoList';
@@ -22,7 +22,7 @@
     export default Services;
 
 
-### Tasks
+### Tasks (similar 2)
 
     import WithSearch from './WithSearch';
     import TodoList from './TodoList';
