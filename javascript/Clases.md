@@ -102,6 +102,26 @@ O también se puede así:
     perro.hacerSonido(); // Rex hace un sonido.
     perro.ladrar(); // Rex ladra.
 
+### Diferencias Clave
+Constructor en la Subclase:
+
+* Primer Fragmento: La clase Perro tiene su propio constructor que acepta dos parámetros (nombre y raza). Dentro de este constructor, se llama a super(nombre) para invocar el constructor de la clase base (Animal) y asignar el valor de nombre. Además, se asigna el valor de raza a la propiedad raza de Perro.
+* Segundo Fragmento: La clase Perro no tiene su propio constructor. En este caso, el constructor de la clase base (Animal) se utiliza automáticamente cuando se crea una instancia de Perro.
+  
+Propiedades Adicionales:
+
+* Primer Fragmento: Perro tiene una propiedad adicional raza, que se inicializa en su constructor.
+* Segundo Fragmento: Perro no tiene propiedades adicionales y solo hereda la propiedad nombre de Animal.
+* 
+Uso de super():
+
+* Primer Fragmento: super(nombre) se utiliza en el constructor de Perro para llamar al constructor de Animal. Esto es necesario cuando la subclase tiene su propio constructor y necesita inicializar la parte heredada de la clase base.
+* Segundo Fragmento: No se usa super() porque no hay un constructor en la subclase Perro.
+  
+### ¿Por qué funcionan ambos?
+
+Ambos fragmentos funcionan porque JavaScript permite que una subclase herede de una superclase sin necesidad de definir un constructor en la subclase. Si no se define un constructor en la subclase, el constructor de la superclase se utiliza automáticamente. Sin embargo, si se define un constructor en la subclase, es necesario llamar a super() para asegurarse de que la parte heredada de la clase base se inicialice correctamente.
+
 ### 4. Propiedades y métodos estáticos
 
 Los métodos y propiedades estáticos pertenecen a la clase en sí, no a las instancias de la clase.
