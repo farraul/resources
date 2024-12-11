@@ -7,9 +7,8 @@
         }
     };
 
-## Points
+## Explanation
 
-¡Entendido! Aquí tienes un resumen más completo de los puntos que mencionaste, incluyendo el uso de super():
 
 ### 1. Clases
 Una clase es una plantilla para crear objetos. Define un conjunto de propiedades y métodos que los objetos creados a partir de la clase tendrán.
