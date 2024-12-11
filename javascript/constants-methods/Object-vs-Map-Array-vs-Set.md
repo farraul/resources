@@ -29,6 +29,37 @@ https://es.javascript.info/map-set
     // Llamar a la función para almacenar los datos
     await almacenarDatosEnMap(cacheUsuarios, datosUsuarios);
 
+### Tipos de keys
+
+
+#### Objetos:
+
+
+* Strings: Son los más comunes y versátiles. Puedes utilizar cualquier cadena de texto como clave.
+
+        const persona = {
+            nombre: 'Juan',
+            edad: 30,
+            ciudad: 'Madrid'
+        };
+  
+* Símbolos: Son más específicos y se utilizan para crear propiedades privadas o únicas dentro de un objeto.
+    
+        const objetoConSimbolo = {
+            [Symbol('claveSecreta')]: 'valor oculto'
+        };
+      
+#### Maps:
+
+Los mapas ofrecen una mayor flexibilidad en cuanto a los tipos de claves. Puedes utilizar cualquier tipo de dato como clave, incluso objetos y funciones.
+
+
+    const miMapa = new Map();
+    miMapa.set('nombre', 'Ana');
+    miMapa.set(30, 'edad');
+    miMapa.set(true, 'bandera');
+    miMapa.set({}, 'objeto como clave');
+
 ## Set (similar to arrays)
 * Cada valor puede aparecer solo una vez.
 
