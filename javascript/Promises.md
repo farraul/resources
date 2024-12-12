@@ -1,4 +1,5 @@
-### Sinn catch
+
+## Sin catch
 
         let promise = new Promise(function(resolve, reject) {
           setTimeout(() => reject(new Error("Whoops!")), 1000);
@@ -11,6 +12,8 @@
         );
 
 ### Con catch
+Los errores también pueden ser manejados usando .catch. La diferencia es que .catch se usa específicamente para manejar errores, mientras que .then puede manejar tanto el éxito como el error. Aquí tienes cómo podrías reescribir tu código usando .catch:
+
 
         let promise = new Promise(function(resolve, reject) {
           setTimeout(() => reject(new Error("Whoops!")), 1000);
