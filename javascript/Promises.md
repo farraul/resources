@@ -1,5 +1,14 @@
+### Ignorado
 
+        let promise = new Promise(function(resolve, reject) {
+          resolve("done");
         
+          reject(new Error("…")); // ignored
+          setTimeout(() => resolve("…")); // ignored
+        });
+
+
+  ### Then      
         let promise = new Promise(function(resolve, reject) {
           setTimeout(() => resolve("done!"), 1000);
         });
