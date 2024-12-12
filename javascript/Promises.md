@@ -1,6 +1,7 @@
 
 ## Sin catch
 Then acepta 2 funciones, es decir el error siempre será la segunda linea, haya lo que haya. 
+
         let promise = new Promise(function(resolve, reject) {
           setTimeout(() => reject(new Error("Whoops!")), 1000);
         });
