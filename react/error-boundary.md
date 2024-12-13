@@ -1,3 +1,6 @@
+Creo que el error sale en el primer render
+    
+    
     // Importamos los componentes necesarios de React
     import { Component, ErrorInfo, ReactNode } from "react";
     
